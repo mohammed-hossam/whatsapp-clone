@@ -5,7 +5,7 @@ import { Avatar, IconButton } from '@material-ui/core';
 import { useEffect, useRef, useState } from 'react';
 import { auth, db } from '../firebase';
 import { useRouter } from 'next/router';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 import Message from './Message';
 import useReciever from '../utils/useReciever';
 

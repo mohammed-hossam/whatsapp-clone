@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { auth } from '../firebase';
 import { db } from '../firebase';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 function useAuth() {
   const [user, setUser] = useState('no user yet');
   const [loading, setLoading] = useState(false);

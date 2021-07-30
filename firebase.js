@@ -1,4 +1,6 @@
-import firebase from 'firebase';
+// import firebase from 'firebase';
+import firebase from 'firebase/app';
+
 //  Add the Firebase products that you want to use
 import 'firebase/firestore';
 import 'firebase/auth';
@@ -19,7 +21,8 @@ const firebaseApp = !firebase.apps.length
 
 //  Add the Firebase products that you want to use
 const db = firebaseApp.firestore();
+const firestore = firebaseApp.firestore;
 const auth = firebaseApp.auth();
 const provider = new firebase.auth.GoogleAuthProvider();
 
-export { db, auth, provider };
+export { db, auth, provider, firestore };

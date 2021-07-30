@@ -4,10 +4,7 @@ import { auth, provider } from '../firebase';
 
 function Login() {
   const signinHandel = () => {
-    auth.signInWithPopup(provider).then((result) => {
-      var user = result.user;
-      console.log(user);
-    });
+    auth.signInWithPopup(provider);
   };
 
   return (
