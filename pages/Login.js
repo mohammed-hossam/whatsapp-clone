@@ -27,12 +27,14 @@ const MainContainer = styled.div`
   display: grid;
   place-items: center;
   background-color: whitesmoke;
+  min-height: 100vh;
 `;
 
 const LoginContainer = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 5px;
+  margin-top: -7em;
 `;
 
 const Logo = styled.img``;
